@@ -196,4 +196,8 @@
     <!-- High touch polling rate -->
     <string name="high_touch_polling_rate_title">High touch polling rate</string>
     <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
 </resources>
