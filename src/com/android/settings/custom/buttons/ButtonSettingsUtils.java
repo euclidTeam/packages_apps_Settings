@@ -21,10 +21,16 @@ import android.view.KeyEvent;
 import com.android.internal.util.euclid.NavbarUtils;
 
 import static com.android.internal.util.euclid.hwkeys.DeviceKeysConstants.*;
+import com.android.settings.Utils;
+
 
 public class ButtonSettingsUtils {
     public static boolean isAvailable(Context context) {
-        return NavbarUtils.canDisable(context) || hasCameraKey(context);
+        return NavbarUtils.canDisable(context) || hasCameraKey(context) || additionalSettingsAvailable(context);
+    }
+
+    public static boolean additionalSettingsAvailable(Context context) {
+        return Utils.canResolveIntent(context, "com.android.settings.device.ADDITIONAL_BUTTONS_SETTINGS");
     }
 
     public static int getDeviceKeys(Context context) {
