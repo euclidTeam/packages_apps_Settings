@@ -108,6 +108,7 @@
             android:key="pointer_speed"
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed" />
+
     </PreferenceCategory>
 
     <SwitchPreferenceCompat
