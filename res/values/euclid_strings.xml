@@ -474,4 +474,8 @@ When the screen is off, the torch can be enabled with one of the following key c
      <string name="battery_maximum_capacity">Maximum capacity</string>
      <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
      <string name="battery_maximum_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
 </resources>
