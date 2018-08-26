@@ -10,6 +10,7 @@
     <string name="euclid_version">Euclid version</string>
     <string name="euclid_version_default">Unknown</string>
     <string name="keywords_euclid_version">Euclid version, euclid version</string>
+    <string name="build_date">Build date</string>
 
     <!-- Android debugging as root -->
     <string name="adb_enable_root">Rooted debugging</string>
