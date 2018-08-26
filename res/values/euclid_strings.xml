@@ -9,6 +9,7 @@
     <string name="euclid_version">Euclid version</string>
     <string name="euclid_version_default">Unknown</string>
     <string name="keywords_euclid_version">Euclid version, euclid version</string>
+    <string name="build_date">Build date</string>
 
     <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Change backup provider</string>
@@ -23,4 +24,5 @@
     <!-- Maintainer Info -->
     <string name="maintainer_title">Maintainer</string>
     <string name="maintainer_unknown">Unknown Maintainer</string>
+
 </resources>
