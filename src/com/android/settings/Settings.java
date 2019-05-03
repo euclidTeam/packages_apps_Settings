@@ -545,4 +545,6 @@ public class Settings extends SettingsActivity {
     public static class PrismLockscreenActivity extends SettingsActivity {}
     public static class PrismQuickSettingsActivity extends SettingsActivity {}
     public static class PrismStatusBarActivity extends SettingsActivity {}
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }
