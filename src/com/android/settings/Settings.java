@@ -501,4 +501,7 @@ public class Settings extends SettingsActivity {
     public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
 
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }

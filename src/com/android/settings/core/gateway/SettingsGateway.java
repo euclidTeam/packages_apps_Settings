@@ -203,6 +203,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.geometrics.settings.Geometrics;
 
+import com.android.settings.livedisplay.LiveDisplaySettings;
+
 public class SettingsGateway {
 
     /**
@@ -394,6 +396,7 @@ public class SettingsGateway {
 	    //Geometrics additions
 	    Geometrics.class.getName(),
             RunningServices.class.getName(),
+            LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
