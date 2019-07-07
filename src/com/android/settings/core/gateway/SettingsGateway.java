@@ -228,6 +228,8 @@ import com.prism.settings.fragments.themes.*;
 import com.prism.settings.fragments.lockscreen.*;
 
 
+import com.prism.settings.fragments.system.SmartPixels;
+
 import con.android.settings.wifi.tether.WifiTetherClientManager;
 
 public class SettingsGateway {
@@ -444,6 +446,7 @@ public class SettingsGateway {
             LiveDisplaySettings.class.getName(),
             RunningServices.class.getName(),
             SleepMode.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -496,6 +499,7 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
-            Settings.SleepModeActivity.class.getName()
+            Settings.SleepModeActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
