@@ -18,4 +18,14 @@
 
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <!-- About phone screen, EuclidOS version -->
+    <string name="euclid_version">Euclid version</string>
+    <string name="euclid_version_default">Unknown</string>
+    <string name="keywords_euclid_version">EuclidOS version, euclid version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
 </resources>
