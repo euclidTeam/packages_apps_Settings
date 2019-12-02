@@ -15,6 +15,9 @@
     <string name="backup_transport_setting_label">Change backup provider</string>
     <string name="backup_transport_title">Select backup provider</string>
 
+    <!-- euclidOS device -->
+    <string name="about_device_name">Device</string>
+    
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>

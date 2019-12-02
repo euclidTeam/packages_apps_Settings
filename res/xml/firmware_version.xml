@@ -38,7 +38,15 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidVersionPreferenceController"/>
 
-    <!-- Maintainer Info -->
+    <!-- euclidOS Device -->
+    <Preference
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+
+    <!--  Maintainer Info -->
     <Preference
         android:key="maintainer_info"
         android:title="@string/maintainer_title"
