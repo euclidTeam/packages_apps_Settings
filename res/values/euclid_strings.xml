@@ -20,6 +20,7 @@
     <string name="device_info_protected_single_press">Tap to show info</string>
 
     <!-- About phone screen, EuclidOS version -->
+    <string name="about_device_name">Device</string>
     <string name="euclid_version">Euclid version</string>
     <string name="euclid_version_default">Unknown</string>
     <string name="keywords_euclid_version">EuclidOS version, euclid version</string>
