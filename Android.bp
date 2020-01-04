@@ -65,7 +65,8 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-	"Geometrics/res",
+	    "Geometrics/res",
+        "TouchGestures/res"
     ],
     
     aaptflags: ["--extra-packages com.geometrics",
