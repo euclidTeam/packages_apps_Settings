@@ -301,4 +301,8 @@
     <string name="back_gesture_haptic_title">Back gesture haptic</string>
     <string name="back_gesture_haptic_summary">Vibrate when performing a back gesture</string>
 
+    <!-- Navigation bar hint -->
+    <string name="show_navbar_gesture_bar_title">Gesture indicator</string>
+    <string name="show_navbar_gesture_bar_summary">Show gesture indicator at the bottom of the screen</string>
+
 </resources>

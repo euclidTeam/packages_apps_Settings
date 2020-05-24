@@ -35,6 +35,12 @@
         android:summary="@string/back_gesture_haptic_summary"
         android:defaultValue="true" />
 
+    <com.euclid.support.preferences.SystemSettingSwitchPreference
+        android:key="navigation_bar_hint"
+        android:title="@string/show_navbar_gesture_bar_title"
+        android:summary="@string/show_navbar_gesture_bar_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
