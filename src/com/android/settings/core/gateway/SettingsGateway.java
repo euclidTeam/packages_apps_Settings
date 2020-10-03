@@ -378,7 +378,7 @@ public class SettingsGateway {
             // LiveDisplay additions
             LiveDisplaySettings.class.getName(),
 	    //Geometrics additions
-	    GeometricsSettings.class.getName()
+	    GeometricsSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

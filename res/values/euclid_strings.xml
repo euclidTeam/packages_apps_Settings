@@ -289,4 +289,10 @@ limitations under the License.
     <!-- Geometrics -->
     <string name="geometrics_title">Geometrics</string>
     <string name="build_tweaks_summary_title">Shape Your Android Experience</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="display_cutout_force_fullscreen_search">Search</string>
+    <string name="display_cutout_force_fullscreen_search_apps">Search apps</string>
 </resources>
