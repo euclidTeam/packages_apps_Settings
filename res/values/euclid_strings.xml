@@ -103,4 +103,6 @@
     <string name="battery_stat_capacity">Capacity</string>
     <string name="battery_stat_cycle">Cycle</string>
 
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radio info</string>
 </resources>
