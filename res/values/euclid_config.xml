@@ -28,4 +28,7 @@
 
     <!-- Show battery cycle count -->
     <bool name="config_show_battery_cycle_count" translatable="false">false</bool>
+
+    <!-- Whether device supports increased touch sensitvity -->
+    <bool name="config_supportTouchPollingMode">false</bool>
 </resources>
