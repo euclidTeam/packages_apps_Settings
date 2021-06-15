@@ -120,6 +120,7 @@ android_library {
         "androidx.test.rules",
         "telephony_flags_core_java_lib",
         "setupdesign-lottie-loading-layout",
+        "glide",
         "VendorSupport-preference",
     ],
 
@@ -179,4 +180,9 @@ android_library_import {
 filegroup {
     name: "Settings_proguard_flags",
     srcs: ["proguard.flags"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
 }
