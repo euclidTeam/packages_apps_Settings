@@ -21,25 +21,20 @@
     android:title="@string/dark_ui_mode"
     settings:keywords="@string/keywords_dark_ui_mode">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="dark_mode_video"
+        settings:searchable="false"
+        settings:lottie_rawRes="@raw/darkmode"/>
+
     <com.android.settingslib.widget.TopIntroPreference
         android:key="dark_ui_top_intro"
         android:title="@string/dark_ui_text"
         settings:searchable="false"/>
-        
-   <com.android.settingslib.widget.IllustrationPreference
-        android:key="dark_illustration"
-        app:lottie_rawRes="@raw/darkmode"/>
 
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="dark_ui_activated"
         android:title="@string/dark_theme_main_switch_title"
         settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
-
-    <com.euclid.support.preferences.SecureSettingSwitchPreference
-        android:key="system_black_theme"
-        android:title="@string/system_black_theme_title"
-        android:summary="@string/system_black_theme_summary"
-        android:defaultValue="false" />
 
     <com.android.settingslib.widget.BannerMessagePreference
         android:key="dark_ui_location_off"
@@ -72,4 +67,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController" />
 
+    <com.euclid.support.preferences.SecureSettingSwitchPreference
+        android:key="system_black_theme"
+        android:title="@string/system_black_theme_title"
+        android:summary="@string/system_black_theme_summary"
+        android:defaultValue="false" />
+
+     <SwitchPreferenceCompat
+            android:key="hwui_force_dark"
+            android:title="@string/hwui_force_dark_title"
+            android:summary="@string/hwui_force_dark_summary" />
 </PreferenceScreen>
