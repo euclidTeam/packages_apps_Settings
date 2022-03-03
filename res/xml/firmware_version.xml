@@ -45,6 +45,14 @@
          settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidVersionPreferenceController"/>
 
 
+    <!-- Euclid Maintainer  -->
+    <Preference
+        android:key="euclid_maintainer"
+        android:title="@string/euclid_maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidMaintainerPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
