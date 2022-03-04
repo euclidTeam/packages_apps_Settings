@@ -51,16 +51,27 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java",
+	   "src/**/*.kt",
+	   "Geometrics/src/**/*.java",
+    ],
+
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/shared/**/*.kt",
     ],
     use_resource_processor: true,
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+	"Geometrics/res",
     ],
+    
+    aaptflags: ["--extra-packages com.geometrics",
+                "--extra-packages github.com.st235.lib_expandablebottombar",
+    ],
+
     static_libs: [
         // External dependencies
         "androidx.navigation_navigation-fragment-ktx",
@@ -103,6 +114,12 @@ android_library {
         "settings-logtags",
         "settings-telephony-protos-lite",
         "statslog-settings",
+        "expandable-bottombar",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "kotlin-stdlib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
@@ -158,4 +175,10 @@ android_library_import {
 filegroup {
     name: "Settings_proguard_flags",
     srcs: ["proguard.flags"],
+}
+
+android_library_import {
+    name: "expandable-bottombar",
+    aars: ["libs/lib-expandablebottombar-release.aar"],
+    sdk_version: "current",
 }
