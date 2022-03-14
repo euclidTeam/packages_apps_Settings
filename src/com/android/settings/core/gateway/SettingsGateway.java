@@ -206,6 +206,8 @@ import com.geometrics.settings.Geometrics;
 
 import com.android.settings.livedisplay.LiveDisplaySettings;
 
+import con.android.settings.wifi.tether.WifiTetherClientManager;
+
 public class SettingsGateway {
 
     /**
@@ -399,6 +401,7 @@ public class SettingsGateway {
 	    Geometrics.class.getName(),
             RunningServices.class.getName(),
             LiveDisplaySettings.class.getName(),
+            WifiTetherClientManager.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
