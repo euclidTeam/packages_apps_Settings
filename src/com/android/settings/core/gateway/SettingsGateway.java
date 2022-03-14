@@ -225,6 +225,8 @@ import com.prism.settings.fragments.themes.*;
 import com.prism.settings.fragments.lockscreen.*;
 
 
+import con.android.settings.wifi.tether.WifiTetherClientManager;
+
 public class SettingsGateway {
 
     /**
@@ -435,6 +437,7 @@ public class SettingsGateway {
             ContentProtectionPreferenceFragment.class.getName(),
             ToggleScreenMagnificationPreferenceFragment.class.getName(),
             FlashNotificationsPreferenceFragment.class.getName(),
+            WifiTetherClientManager.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
