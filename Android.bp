@@ -74,7 +74,10 @@ android_library {
 
     static_libs: [
         // External dependencies
+        "androidx.fragment_fragment",
+        "androidx.fragment_fragment-ktx",
         "androidx.navigation_navigation-fragment-ktx",
+        "androidx.preference_preference-ktx",
         "androidx.window_window-java",
         "gson",
         "guava",
@@ -122,6 +125,8 @@ android_library {
         "androidx.navigation_navigation-ui-ktx",
         "kotlin-stdlib",
         "VendorSupport-preference",
+        "kotlinx_coroutines_android",
+        "kotlinx_coroutines",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
