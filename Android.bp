@@ -77,7 +77,10 @@ android_library {
 
     static_libs: [
         // External dependencies
+        "androidx.fragment_fragment",
+        "androidx.fragment_fragment-ktx",
         "androidx.navigation_navigation-fragment-ktx",
+        "androidx.preference_preference-ktx",
         "androidx.window_window-java",
         "gson",
         "androidx.fragment_fragment",

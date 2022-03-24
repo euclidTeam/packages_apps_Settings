@@ -131,6 +131,7 @@ public class BiometricFragment extends InstrumentedFragment {
                 .setTitle(promptInfo.getTitle())
                 .setUseDefaultTitle() // use default title if title is null/empty
                 .setDeviceCredentialAllowed(true)
+                .setAllowedAuthenticators(promptInfo.getAuthenticators())
                 .setSubtitle(promptInfo.getSubtitle())
                 .setDescription(promptInfo.getDescription())
                 .setTextForDeviceCredential(
@@ -141,7 +142,8 @@ public class BiometricFragment extends InstrumentedFragment {
                 .setDisallowBiometricsIfPolicyExists(
                         promptInfo.isDisallowBiometricsIfPolicyExists())
                 .setShowEmergencyCallButton(promptInfo.isShowEmergencyCallButton())
-                .setReceiveSystemEvents(true);
+                .setReceiveSystemEvents(true)
+                .setAllowBackgroundAuthentication(promptInfo.isAllowBackgroundAuthentication());
 
         if (Flags.enableBiometricsToUnlockPrivateSpace()) {
             promptBuilder = promptBuilder.setAllowBackgroundAuthentication(true /* allow */,
