@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2021 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -29,5 +29,5 @@
         android:height="@dimen/dashboard_tile_foreground_image_size"
         android:start="@dimen/dashboard_tile_foreground_image_inset"
         android:top="@dimen/dashboard_tile_foreground_image_inset"
-        android:drawable="@drawable/ic_404_devices" />
+        android:drawable="@drawable/ic_settings_wallpaper_white" />
 </layer-list>
