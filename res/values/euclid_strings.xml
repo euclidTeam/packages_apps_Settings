@@ -86,4 +86,6 @@
      <!-- Running Services -->
      <string name="background_processes_settings_title">Process in background</string>
 
+     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
+     <string name="wallpaper_dashboard_custom_summary">Colors, themed icons, app grid</string>
 </resources>
