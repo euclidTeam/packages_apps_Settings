@@ -23,4 +23,10 @@
     but a dedicated one, i.e. not embedded in the power button. -->
     <bool name="config_is_side_fps" translatable="false">false</bool>
 
+    <!-- Battery health -->
+    <bool name="config_supportBatteryHealth">false</bool>
+    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
+
 </resources>
