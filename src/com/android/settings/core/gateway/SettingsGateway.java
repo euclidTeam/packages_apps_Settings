@@ -450,5 +450,6 @@ public class SettingsGateway {
             Settings.NavigationModeSettingsActivity.class.getName(),
 	        Settings.GeometricsSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.PreviouslyConnectedDeviceDashboardActivity.class.getName(),
     };
 }

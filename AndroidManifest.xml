@@ -361,19 +361,16 @@
         </activity>
 
         <activity
-            android:name=".Settings$PreviouslyConnectedDevicesActivity"
+            android:name=".Settings$PreviouslyConnectedDeviceDashboardActivity"
             android:label="@string/connected_device_saved_title"
-            android:exported="true">
+            android:exported="true"
+            android:icon="@drawable/ic_homepage_connected_device">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.SAVED_DEVICES" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.connecteddevice.PreviouslyConnectedDeviceDashboardFragment"/>
-            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
-                android:value="@string/menu_key_connected_devices"/>
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
+                       android:value="com.android.settings.connecteddevice.PreviouslyConnectedDeviceDashboardFragment"/>
         </activity>
 
         <activity android:name="AirplaneModeVoiceActivity"
