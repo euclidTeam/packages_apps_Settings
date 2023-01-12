@@ -5245,13 +5245,13 @@
 
         <!-- App lock -->
         <activity android:name=".security.applock.AppLockCredentialActivity"
-            android:exported="false"
-            android:permission="android.permission.MANAGE_APP_LOCK"
-            android:excludeFromRecents="true"
-            android:stateNotNeeded="true"
-            android:taskAffinity="com.android.settings.applock"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+                  android:exported="false"
+                  android:permission="android.permission.MANAGE_APP_LOCK"
+                  android:excludeFromRecents="true"
+                  android:stateNotNeeded="true"
+                  android:taskAffinity="com.android.settings.applock"
+                  android:launchMode="singleInstance"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.app.action.UNLOCK_APP" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -5259,10 +5259,24 @@
         </activity>
 
         <activity android:name=".security.applock.AppLockSubSettings"
-            android:exported="false"
-            android:excludeFromRecents="true"
-            android:taskAffinity="com.android.settings.applock"
-            android:launchMode="singleTask" />
+                  android:exported="false"
+                  android:excludeFromRecents="true"
+                  android:taskAffinity="com.android.settings.applock"
+                  android:launchMode="singleTask" />
+
+            <activity
+                android:name=".Settings$WirelessDebuggingActivity"
+                android:label="@string/adb_wireless_settings"
+                android:exported="true"
+                android:icon="@drawable/tile_icon_debugging_wireless">
+                <intent-filter android:priority="1">
+                    <action android:name="android.settings.WIRELESS_DEBUGGING_SETTINGS" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+                <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                           android:value="com.android.settings.development.WirelessDebuggingFragment"/>
+                </activity>
+
 
     </application>
 </manifest>
