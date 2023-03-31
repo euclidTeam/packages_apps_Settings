@@ -1,154 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright 2024 euclid OS Project
+Copyright 2024 euclid OS Project
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-         http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- String for removal of sensitive info on about, depending on tap -->
-    <string name="device_info_protected_single_press">Tap to show info</string>
+     <!-- String for removal of sensitive info on about, depending on tap -->
+     <string name="device_info_protected_single_press">Tap to show info</string>
 
-    <!-- About phone screen, EuclidOS version -->
-    <string name="about_device_name">Device</string>
-    <string name="euclid_version">Euclid version</string>
-    <string name="euclid_version_default">Unknown</string>
-    <string name="keywords_euclid_version">EuclidOS version, euclid version</string>
+     <!-- About phone screen, EuclidOS version -->
+     <string name="about_device_name">Device</string>
+     <string name="euclid_version">Euclid version</string>
+     <string name="euclid_version_default">Unknown</string>
+     <string name="keywords_euclid_version">EuclidOS version, euclid version</string>
 
-    <!-- About phone screen, build date -->
-    <string name="build_date">Build date</string>
-    <string name="build_date_default">2015-01-01-0000</string>
-    <string name="keywords_build_date">build date, build info</string>
+     <!-- About phone screen, build date -->
+     <string name="build_date">Build date</string>
+     <string name="build_date_default">2015-01-01-0000</string>
+     <string name="keywords_build_date">build date, build info</string>
 
-    <!-- Euclid Maintainer -->
-    <string name="euclid_maintainer">Device maintainer</string>
+     <!-- Euclid Maintainer -->
+     <string name="euclid_maintainer">Device maintainer</string>
 
-    <!-- Hardware info -->
-    <string name="soc_model">SoC Model</string>
-    <string name="total_ram">Total RAM</string>
+     <!-- Hardware info -->
+     <string name="soc_model">SoC Model</string>
+     <string name="total_ram">Total RAM</string>
 
-    <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+     <!-- SELinux Status -->
+     <string name="selinux_status">SELinux status</string>
+     <string name="selinux_status_disabled">Disabled</string>
+     <string name="selinux_status_permissive">Permissive</string>
+     <string name="selinux_status_enforcing">Enforcing</string>
 
-    <!-- Preference and settings suggestion title text for screen off UDFPS -->
-    <string name="ambient_display_screen_off_udfps_title">Long press on fingerprint sensor to unlock device</string>
-    <!-- Summary text for screen off UDFPS -->
-    <string name="ambient_display_screen_off_udfps_summary">To wake up your screen and unlock, long press your under-display fingerprint sensor</string>
+     <!-- Preference and settings suggestion title text for screen off UDFPS -->
+     <string name="ambient_display_screen_off_udfps_title">Long press on fingerprint sensor to unlock device</string>
+     <!-- Summary text for screen off UDFPS -->
+     <string name="ambient_display_screen_off_udfps_summary">To wake up your screen and unlock, long press your under-display fingerprint sensor</string>
 
-    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
-    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
-    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
-    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
-    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Locate the fingerprint sensor on the back of your tablet.</string>
-    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Locate the fingerprint sensor on the back of your device.</string>
-    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Locate the fingerprint sensor on the back of your phone.</string>
-    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Locate the fingerprint sensor on the side of your tablet.</string>
-    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Locate the fingerprint sensor on the side of your device.</string>
-    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Locate the fingerprint sensor on the side of your phone.</string>
+     <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+     <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+     <string name="fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
+     <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Locate the fingerprint sensor on the back of your tablet.</string>
+     <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Locate the fingerprint sensor on the back of your device.</string>
+     <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Locate the fingerprint sensor on the back of your phone.</string>
+     <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Locate the fingerprint sensor on the side of your tablet.</string>
+     <string name="fingerprint_enroll_find_sensor_message_side" product="device">Locate the fingerprint sensor on the side of your device.</string>
+     <string name="fingerprint_enroll_find_sensor_message_side" product="default">Locate the fingerprint sensor on the side of your phone.</string>
 
-    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Touch the sensor on the front of your tablet.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Touch the sensor on the front of your device.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Touch the sensor on the front of your phone.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Touch the sensor on the back of your tablet.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Touch the sensor on the back of your device.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Touch the sensor on the back of your phone.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Touch the sensor on the side of your tablet.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
+     <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+     <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Touch the sensor on the front of your tablet.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Touch the sensor on the front of your device.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Touch the sensor on the front of your phone.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Touch the sensor on the back of your tablet.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Touch the sensor on the back of your device.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Touch the sensor on the back of your phone.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Touch the sensor on the side of your tablet.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
+     <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
 
-    <!-- App lock -->
-    <string name="app_lock_title">App lock</string>
-    <string name="app_lock_authentication_dialog_title">Unlock</string>
-    <string name="enable_debugging">Enable debugging</string>
-    <string name="disable_debugging">Disable debugging</string>
-    <string name="app_lock_packages_title">Protected apps</string>
-    <string name="app_lock_packages_summary">Select the apps to protect with biometrics or device credentials</string>
-    <string name="app_lock_timeout_title">Auto lock timeout</string>
-    <string name="app_lock_timeout_summary">Duration of time after which an unlocked app in background should be locked</string>
-    <string name="app_lock_timeout_5secs">5 seconds</string>
-    <string name="app_lock_timeout_10secs">10 seconds</string>
-    <string name="app_lock_timeout_30secs">30 seconds</string>
-    <string name="app_lock_timeout_1min">1 minute</string>
-    <string name="app_lock_timeout_5mins">5 minutes</string>
-    <string name="app_lock_timeout_10mins">10 minutes</string>
-    <string name="app_lock_timeout_30mins">30 minutes</string>
-    <string name="app_lock_notifications_title">Redact notifications</string>
-    <string name="app_lock_notifications_summary">
-        Notification content will be hidden and collapsed when app is locked out.
-        Existing notifications as well as new notifications will be redacted.
-        Heads up notifications will be automatically disabled.
-    </string>
-    <string name="app_lock_notifications_disabled_summary">Protect an application first</string>
-    <string name="app_lock_biometrics_allowed_title">Enable biometrics for unlocking</string>
-    <string name="app_lock_footer_text">Bubbles will be automatically dismissed after timeout</string>
-    <string name="enable_protection">Enable protection</string>
-    <string name="hide_from_launcher_title">Hide from launcher</string>
-    <string name="hide_from_launcher_summary">
-        Prevent this application from showing up in launcher. Requires a launcher restart for changes to take effect.
-    </string>
+     <!-- App lock -->
+     <string name="app_lock_title">App lock</string>
+     <string name="app_lock_authentication_dialog_title">Unlock</string>
+     <string name="enable_debugging">Enable debugging</string>
+     <string name="disable_debugging">Disable debugging</string>
+     <string name="app_lock_packages_title">Protected apps</string>
+     <string name="app_lock_packages_summary">Select the apps to protect with biometrics or device credentials</string>
+     <string name="app_lock_timeout_title">Auto lock timeout</string>
+     <string name="app_lock_timeout_summary">Duration of time after which an unlocked app in background should be locked</string>
+     <string name="app_lock_timeout_5secs">5 seconds</string>
+     <string name="app_lock_timeout_10secs">10 seconds</string>
+     <string name="app_lock_timeout_30secs">30 seconds</string>
+     <string name="app_lock_timeout_1min">1 minute</string>
+     <string name="app_lock_timeout_5mins">5 minutes</string>
+     <string name="app_lock_timeout_10mins">10 minutes</string>
+     <string name="app_lock_timeout_30mins">30 minutes</string>
+     <string name="app_lock_notifications_title">Redact notifications</string>
+     <string name="app_lock_notifications_summary">
+          Notification content will be hidden and collapsed when app is locked out.
+          Existing notifications as well as new notifications will be redacted.
+          Heads up notifications will be automatically disabled.
+     </string>
+     <string name="app_lock_notifications_disabled_summary">Protect an application first</string>
+     <string name="app_lock_biometrics_allowed_title">Enable biometrics for unlocking</string>
+     <string name="app_lock_footer_text">Bubbles will be automatically dismissed after timeout</string>
+     <string name="enable_protection">Enable protection</string>
+     <string name="hide_from_launcher_title">Hide from launcher</string>
+     <string name="hide_from_launcher_summary">
+          Prevent this application from showing up in launcher. Requires a launcher restart for changes to take effect.
+     </string>
 
-    <!-- Battery Info: Technology -->
-    <string name="battery_technology">Technology</string>
-    <string name="battery_technology_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Technology -->
+     <string name="battery_technology">Technology</string>
+     <string name="battery_technology_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
-    <!-- Battery Info: Health -->
-    <string name="battery_health">Health</string>
-    <string name="battery_health_good">Good</string>
-    <string name="battery_health_overheat">Overheat</string>
-    <string name="battery_health_dead">Dead</string>
-    <string name="battery_health_over_voltage">Over voltage</string>
-    <string name="battery_health_unspecified_failure">Unspecified failure</string>
-    <string name="battery_health_cold">Cold</string>
-    <string name="battery_health_unknown">Unknown</string>
+     <!-- Battery Info: Health -->
+     <string name="battery_health">Health</string>
+     <string name="battery_health_good">Good</string>
+     <string name="battery_health_overheat">Overheat</string>
+     <string name="battery_health_dead">Dead</string>
+     <string name="battery_health_over_voltage">Over voltage</string>
+     <string name="battery_health_unspecified_failure">Unspecified failure</string>
+     <string name="battery_health_cold">Cold</string>
+     <string name="battery_health_unknown">Unknown</string>
 
-    <!-- Battery Info: Temperature -->
-    <string name="battery_temperature">Temperature</string>
-    <string name="battery_temperature_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Temperature -->
+     <string name="battery_temperature">Temperature</string>
+     <string name="battery_temperature_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
-    <!-- Battery Info: Voltage -->
-    <string name="battery_voltage">Voltage</string>
-    <string name="battery_voltage_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Voltage -->
+     <string name="battery_voltage">Voltage</string>
+     <string name="battery_voltage_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
-    <!-- Battery Info: Charge Counter -->
-    <string name="battery_charge_counter_summary">%1$d mAh</string>
+     <!-- Battery Info: Charge Counter -->
+     <string name="battery_charge_counter_summary">%1$d mAh</string>
 
-    <!-- Battery Info: Design Capacity -->
-    <string name="battery_design_capacity">Design capacity</string>
-    <string name="battery_design_capacity_summary">%1$d mAh</string>
-    <string name="battery_design_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Design Capacity -->
+     <string name="battery_design_capacity">Design capacity</string>
+     <string name="battery_design_capacity_summary">%1$d mAh</string>
+     <string name="battery_design_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
-    <!-- Battery Info: Maximum Capacity -->
-    <string name="battery_maximum_capacity">Maximum capacity</string>
-    <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
-    <string name="battery_maximum_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
+     <!-- Battery Info: Maximum Capacity -->
+     <string name="battery_maximum_capacity">Maximum capacity</string>
+     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+     <string name="battery_maximum_capacity_not_available" translatable="false">@string/battery_cycle_count_not_available</string>
 
-    <!-- Hotspot extras -->
-    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+     <!-- Hotspot extras -->
+     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
 
-    <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
-    <string name="navbar_invert_info">Swap the \"Back\" and \"Recents\" buttons on the navigation bar</string>
+     <!-- Navbar options -->
+     <string name="navbar_invert_layout_title">Invert navigation bar layout</string>
+     <string name="navbar_invert_info">Swap the \"Back\" and \"Recents\" buttons on the navigation bar</string>
 
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Swipe to screenshot</string>
-    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+     <!-- Three-fingers-swipe to screenshot -->
+     <string name="three_finger_gesture">Swipe to screenshot</string>
+     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 
-    <!-- Torch Power button gestures -->
-    <string name="power_button_torch_title">Quick torch</string>
-    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+     <!-- Torch Power button gestures -->
+     <string name="power_button_torch_title">Quick torch</string>
+     <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca">Force LTE CA</string>
+    <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
 </resources>
