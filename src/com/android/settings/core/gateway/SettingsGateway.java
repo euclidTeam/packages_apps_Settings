@@ -496,10 +496,6 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
-<<<<<<< HEAD
-=======
-            Settings.SmartPixelsActivity.class.getName(),
             Settings.SleepModeActivity.class.getName()
->>>>>>> cfa80c4f488 (Settings: Introduce automated Sleep Mode [2/2])
     };
 }
