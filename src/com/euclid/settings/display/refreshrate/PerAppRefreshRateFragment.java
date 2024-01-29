@@ -16,9 +16,9 @@ import java.util.List;
 
 import com.euclid.display.RefreshRateManager;
 
-import com.euclid.settings.fragment.PerAppConfigFragment;
+import com.euclid.settings.fragment.PerAppListConfigFragment;
 
-public class PerAppRefreshRateFragment extends PerAppConfigFragment {
+public class PerAppRefreshRateFragment extends PerAppListConfigFragment {
 
     private DisplayRefreshRateHelper mHelper;
     private RefreshRateManager mRefreshRateManager;
