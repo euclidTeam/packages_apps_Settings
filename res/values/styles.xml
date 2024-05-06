@@ -989,4 +989,7 @@
         <item name="android:layout_alignParentTop">true</item>
     </style>
 
+    <style name="TextAppearance.HomepagePreferenceTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>
