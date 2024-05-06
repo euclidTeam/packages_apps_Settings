@@ -1008,4 +1008,7 @@
         <item name="android:background">@null</item>
     </style>
 
+    <style name="TextAppearance.HomepagePreferenceTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>

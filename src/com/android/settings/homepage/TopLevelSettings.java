@@ -20,11 +20,21 @@ import static com.android.settings.search.actionbar.SearchMenuController.NEED_SE
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
 import android.app.ActivityManager;
+import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.pm.UserInfo;
 import android.content.res.Configuration;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.UserManager;
+import android.provider.Settings;
+import android.view.View;
+import android.widget.TextView;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -52,6 +62,8 @@ import com.android.settings.widget.HomepagePreferenceLayoutHelper.HomepagePrefer
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.widget.LayoutPreference;
+import com.android.settings.widget.EntityHeaderController;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
@@ -60,6 +72,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
+    private static final String KEY_USER_CARD = "top_level_usercard";
+    private int mDashBoardStyle;
 
     private boolean mIsEmbeddingActivityEnabled;
     private TopLevelHighlightMixin mHighlightMixin;
@@ -67,6 +81,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private boolean mScrollNeeded = true;
     private boolean mFirstStarted = true;
     private ActivityEmbeddingController mActivityEmbeddingController;
+    private boolean gAppsExists;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -100,6 +115,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        // Check if Google Apps exist and set the gAppsExists flag accordingly
+        gAppsExists = checkIfGoogleAppsExist(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
     }
@@ -189,12 +206,25 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     /* scrollNeeded= */ false);
         }
         super.onStart();
+	onUserCard();
     }
 
     private boolean isOnlyOneActivityInTask() {
         final ActivityManager.RunningTaskInfo taskInfo = getSystemService(ActivityManager.class)
                 .getRunningTasks(1).get(0);
         return taskInfo.numActivities == 1;
+    }
+
+    private boolean checkIfGoogleAppsExist(Context context) {
+        // Perform the necessary check to determine if Google Apps exist
+        // For example, you might use PackageManager to check for the existence of a Google app package
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            packageManager.getPackageInfo("com.google.android.gsf", 0);
+            return true; // Google Apps exist
+        } catch (PackageManager.NameNotFoundException e) {
+            return false; // Google Apps do not exist
+        }
     }
 
     @Override
@@ -208,6 +238,37 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+	final PreferenceScreen screen = getPreferenceScreen();
+	for (int i = 0; i < screen.getPreferenceCount(); i++) {
+            Preference pref = screen.getPreference(i);
+	    String key = pref.getKey();
+            boolean isValid = pref.isEnabled() && pref.isVisible() && pref.getTitle() != null;
+	    if (key.equals("top_level_network")
+            	|| key.equals("top_level_geometrics")
+                || key.equals("top_level_sound")
+                || key.equals("top_level_apps")
+            	|| key.equals("top_level_emergency")
+                || key.equals("top_level_system")){
+                pref.setLayoutResource(R.layout.top_level_preference_top);
+            } else if (key.equals("top_level_battery")
+            	|| key.equals("top_level_display")
+                || key.equals("top_level_accessibility")
+            	|| key.equals("top_level_security")
+            	|| key.equals("top_level_privacy")
+            	|| key.equals("top_level_safety_center")
+            	|| key.equals("top_level_wellbeing")
+            	|| key.equals("top_level_notifications")){
+                pref.setLayoutResource(R.layout.top_level_preference_middle);
+            } else if ("top_level_google".equals(key)){
+                pref.setLayoutResource(R.layout.top_level_preference_bottom);
+            } else if (key.equals("top_level_accounts") && gAppsExists){
+                pref.setLayoutResource(R.layout.top_level_preference_middle);
+            }  else if (key.equals("top_level_usercard")){
+                pref.setLayoutResource(R.layout.usercard);
+            } else {
+                pref.setLayoutResource(R.layout.top_level_preference_bottom);
+		}
+            }
         int tintColor = Utils.getHomepageIconColor(getContext());
         iteratePreferences(preference -> {
             Drawable icon = preference.getIcon();
@@ -321,6 +382,64 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         if (mHighlightMixin != null) {
             mHighlightMixin.setHighlightMenuKey(menuKey, scrollNeeded);
         }
+    }
+
+    //Fixed NPE here by afterallafk & squashed in main commit
+    private void onUserCard() {
+        final PreferenceScreen preferenceScreen = getPreferenceScreen();
+        if (preferenceScreen == null) {
+            Log.e(TAG, "Preference screen is null");
+            return;
+        }
+        final LayoutPreference headerPreference = (LayoutPreference) preferenceScreen.findPreference(KEY_USER_CARD);
+        if (headerPreference == null) {
+            Log.e(TAG, "Header preference is null");
+            return;
+        }
+        final View userCard = headerPreference.findViewById(R.id.entity_header);
+        if (userCard == null) {
+            Log.e(TAG, "User card view is null");
+            return;
+        }
+        final Activity context = getActivity();
+        if (context == null) {
+            Log.e(TAG, "Activity is null");
+            return;
+        }
+        final Bundle bundle = getArguments();
+        if (bundle == null) {
+            Log.e(TAG, "Bundle is null");
+            return;
+        }
+        final EntityHeaderController controller = EntityHeaderController
+                .newInstance(context, this, userCard)
+                .setRecyclerView(getListView(), getSettingsLifecycle())
+                .setButtonActions(EntityHeaderController.ActionType.ACTION_NONE,
+                       EntityHeaderController.ActionType.ACTION_NONE);
+        userCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                startActivity(intent);
+            }
+        });
+        final int iconId = bundle.getInt("icon_id", 0);
+        if (iconId == 0) {
+            final UserManager userManager = (UserManager) getActivity().getSystemService(Context.USER_SERVICE);
+            if (userManager == null) {
+                Log.e(TAG, "User manager is null");
+                return;
+            }
+            final UserInfo info = Utils.getExistingUser(userManager, android.os.Process.myUserHandle());
+            if (info == null) {
+                Log.e(TAG, "User info is null");
+                return;
+            }
+            controller.setLabel(info.name);
+            controller.setIcon(com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
+        }
+        controller.done(true /* rebindActions */);
     }
 
     @Override

@@ -24,4 +24,7 @@
 
     <!-- euclid Maintainer -->
     <string name="euclid_maintainer">Device Maintainer</string>
+
+    <!-- Settings UI -->
+    <string name="usercard_summary">Current active user, tap for more information</string>
 </resources>
