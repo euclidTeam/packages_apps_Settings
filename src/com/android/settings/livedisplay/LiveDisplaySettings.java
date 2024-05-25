@@ -64,7 +64,7 @@ import com.android.settingslib.search.SearchIndexableRaw;
 import com.android.settingslib.widget.LayoutPreference;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
-import com.power.hub.preferences.SystemSettingSwitchPreference;
+import com.geometrics.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -588,7 +588,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.VOLTAGE;
+        return MetricsEvent.GEOMETRICS;
     }
 
     @Override
