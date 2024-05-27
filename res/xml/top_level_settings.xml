@@ -25,7 +25,6 @@
         android:icon="@drawable/ic_settings_geometrics"
         android:order="-151"
         android:fragment="com.geometrics.geometrics"
-        settings:layout="@layout/top_level_preference_single"
 	    settings:controller="com.geometrics.TopLevelExtensionsEntryPreferenceController" />
 
     <com.android.settings.widget.HomepagePreference

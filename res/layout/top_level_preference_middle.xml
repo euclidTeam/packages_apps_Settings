@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
@@ -31,14 +31,25 @@
             android:layout_height="wrap_content"
             android:textColor="?android:attr/textColorPrimary"
             android:singleLine="true"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:singleLine="true"
+            android:textSize="11sp"
             android:textColor="?android:attr/textColorSecondary"/>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/extra_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/ep_arrow_up_bold" />
 </androidx.constraintlayout.widget.ConstraintLayout>
