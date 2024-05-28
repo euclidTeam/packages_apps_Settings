@@ -7,7 +7,7 @@
     android:layout_marginEnd="16dp"
     android:background="@drawable/euclid_preference_middle_background"
     android:paddingEnd="15dp"
-    android:paddingStart="25dp">
+    android:paddingStart="15dp">
 
     <ImageView
         android:id="@android:id/icon"
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="50dp"
         app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:singleLine="true"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textColor="?android:attr/textColorSecondary"/>
     </LinearLayout>
 

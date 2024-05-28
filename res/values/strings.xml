@@ -7176,7 +7176,7 @@
     <string name="dashboard_title">Settings</string>
 
     <!-- Title for setting tile leading to network and Internet settings [CHAR LIMIT=40]-->
-    <string name="network_dashboard_title">Network &amp; internet</string>
+    <string name="network_dashboard_title">Network \u0026 internet</string>
     <!-- Summary for Network and Internet settings, explaining it contains mobile, wifi setting and data usage settings [CHAR LIMIT=NONE]-->
     <string name="network_dashboard_summary_mobile">Mobile, Wi\u2011Fi, hotspot</string>
     <!-- Summary for Network and Internet settings, explaining it contains wifi and data usage setting [CHAR LIMIT=NONE]-->
