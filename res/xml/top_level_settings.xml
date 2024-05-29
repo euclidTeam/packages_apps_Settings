@@ -47,6 +47,15 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
    
     <com.android.settings.widget.HomepagePreference
+        android:key="top_level_geometrics"
+        android:title="@string/geometrics_title"
+        android:summary="@string/build_tweaks_summary_title"
+        android:icon="@drawable/ic_settings_geometrics"
+        android:order="-130"
+        android:fragment="com.geometrics.settings.GeometricsSettings"
+        settings:controller="com.geometrics.settings.TopLevelGeometricsEntryPreferenceController" />
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
         android:icon="@drawable/ic_settings_display_white"
         android:key="top_level_display"

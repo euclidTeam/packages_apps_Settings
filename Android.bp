@@ -55,16 +55,25 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+	"Geometrics/src/**/*.java",
+        "Geometrics/src/**/*.kt",
     ],
+
+    aaptflags: ["--extra-packages com.geometrics.settings"],
+
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
+
     use_resource_processor: true,
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+	"Geometrics/res",
     ],
+
     static_libs: [
         // External dependencies
         "androidx.navigation_navigation-fragment-ktx",
@@ -126,6 +135,9 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

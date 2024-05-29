@@ -27,4 +27,8 @@
 
     <!-- Settings UI -->
     <string name="usercard_summary">Current active user, tap for more information</string>
+
+    <!-- Geometrics -->
+    <string name="geometrics_title">Geometrics</string>
+    <string name="build_tweaks_summary_title">Shape Your Android Experience</string>
 </resources>

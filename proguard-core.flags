@@ -1,0 +1,2 @@
+# Geometrics
+-keep class com.geometrics.settings.**
