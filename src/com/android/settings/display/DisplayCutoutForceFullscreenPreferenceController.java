@@ -31,12 +31,22 @@ public class DisplayCutoutForceFullscreenPreferenceController extends BasePrefer
 
     public DisplayCutoutForceFullscreenPreferenceController(Context context) {
         super(context, PREF_KEY);
-        mCutoutForceFullscreenSettings = new CutoutFullscreenController(context);
+        try {
+            mCutoutForceFullscreenSettings = new CutoutFullscreenController(context);
+        } catch (Exception e) {
+            // Log or handle exception
+            mCutoutForceFullscreenSettings = null;
+        }
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return mCutoutForceFullscreenSettings.isSupported() ?
-                AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        if (mCutoutForceFullscreenSettings != null) {
+            return mCutoutForceFullscreenSettings.isSupported() ?
+                    AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        } else {
+            // Handle the scenario where mCutoutForceFullscreenSettings is null
+            return UNSUPPORTED_ON_DEVICE;
+        }
     }
 }
