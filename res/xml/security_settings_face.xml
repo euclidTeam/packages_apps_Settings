@@ -66,6 +66,12 @@
             settings:controller="com.android.settings.biometrics.face.BiometricLockscreenBypassPreferenceController" />
     </PreferenceCategory>
 
+    <com.euclid.support.preferences.SystemSettingSwitchPreference
+        android:key="face_lockout"
+        android:title="@string/face_lockout_title"
+        android:summary="@string/face_lockout_summary"
+        android:defaultValue="false" />
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="security_settings_face_delete_faces_container"
         android:title="@string/security_settings_face_settings_remove_face_model"
