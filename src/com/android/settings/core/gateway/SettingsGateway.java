@@ -200,7 +200,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.geometrics.settings.GeometricsSettings;
+import com.geometrics.settings.Geometrics;
 
 public class SettingsGateway {
 
@@ -391,7 +391,7 @@ public class SettingsGateway {
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
 	    //Geometrics additions
-	    GeometricsSettings.class.getName(),
+	    Geometrics.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -438,6 +438,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
-	    Settings.GeometricsSettingsActivity.class.getName(),
+	        Settings.GeometricsSettingsActivity.class.getName(),
     };
 }

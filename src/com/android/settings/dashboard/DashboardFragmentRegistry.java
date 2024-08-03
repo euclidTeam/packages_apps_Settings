@@ -51,7 +51,7 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
-import com.geometrics.settings.GeometricsSettings;
+import com.geometrics.settings.Geometrics;
 
 import java.util.Map;
 
@@ -137,8 +137,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SPECIAL_APP_ACCESS);
         PARENT_TO_CATEGORY_KEY_MAP.put(MoreSecurityPrivacyFragment.class.getName(),
                 CategoryKey.CATEGORY_MORE_SECURITY_PRIVACY_SETTINGS);
-        PARENT_TO_CATEGORY_KEY_MAP.put(GeometricsSettings.class.getName(),
-                CategoryKey.CATEGORY_GEOMETRICS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(Geometrics.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 

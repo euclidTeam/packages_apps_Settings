@@ -52,8 +52,8 @@
         android:summary="@string/build_tweaks_summary_title"
         android:icon="@drawable/ic_settings_geometrics"
         android:order="-130"
-        android:fragment="com.geometrics.settings.GeometricsSettings"
-        settings:controller="com.geometrics.settings.TopLevelGeometricsEntryPreferenceController" />
+        android:fragment="com.geometrics.settings.Geometrics"
+        settings:controller="com.geometrics.settings.TopLevelGeometricsPreferenceController" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
