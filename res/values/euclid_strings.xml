@@ -355,4 +355,10 @@
     <!-- Doze Double Tap -->
     <string name="doze_double_tap_title">Double tap to check phone</string>
     <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="dt_category_header">Double tap gesture</string>
+    <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or
+        lockscreen to turn off the display</string>
 </resources>
