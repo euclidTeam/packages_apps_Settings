@@ -44,6 +44,27 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.euclidMaintainerPreferenceController"/>
 
+    <!-- euclid Codename  -->
+    <Preference
+        android:key="euclid_codename"
+        android:title="@string/euclid_codename_title"
+        android:summary="@string/device_info_default"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidCodeNamePreferenceController"/>
+
+    <!-- euclid Build Version  -->
+    <Preference
+        android:key="euclid_build_version"
+        android:title="@string/euclid_build_version_title"
+        android:summary="@string/device_info_default"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidBuildVersionPreferenceController" />
+
+    <!-- euclid Release Type  -->
+    <Preference
+        android:key="euclid_release_type"
+        android:title="@string/euclid_release_type_title"
+        android:summary="@string/device_info_default"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidReleaseTypePreferenceController" />
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"

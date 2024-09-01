@@ -13,6 +13,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <string name="euclid_codename_title">euclid Codename</string>
+    <string name="euclid_build_version_title">euclid Version</string>
+    <string name="euclid_release_type_title">Release Type</string>
+    <string name="device_info_default">Unknown</string>
+
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="selinux_status">SELinux status</string>
 
