@@ -15,6 +15,7 @@
 
     <string name="euclid_codename_title">euclid Codename</string>
     <string name="euclid_build_version_title">euclid Version</string>
+    <string name="euclid_release_version">euclid Release Version</string>
     <string name="euclid_release_type_title">Release Type</string>
     <string name="device_info_default">Unknown</string>
 
