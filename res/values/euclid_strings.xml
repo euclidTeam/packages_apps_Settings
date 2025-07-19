@@ -478,4 +478,23 @@ When the screen is off, the torch can be enabled with one of the following key c
     <!-- Hardware info -->
     <string name="soc_model">SoC Model</string>
     <string name="total_ram">Total RAM</string>
+    
+    <!-- NT AppLocker -->
+    <string name="nt_app_lock">App Locker</string>
+    <string name="nt_app_lock_summary">Lock the app and unlock with authentication</string>
+    <string name="nt_app_locked_category_title">Locked Apps</string>
+    <string name="nt_app_unlocked_category_title">Unlocked Apps</string>
+    <string name="app_lock_auth_title">Re-enter your pin</string>
+    <string name="app_lock_auth_subtitle">Enter your pin to continue</string>
+    <string name="app_locker_lock_app_when">Lock app when</string>
+    <string name="app_locker_screen_is_locked">Screen is locked</string>
+    <string name="app_locker_screen_is_locked_or_app_exists">Screen is locked or app exits</string>
+    <string name="nt_lock_settings">Lock settings</string>
+    <string name="nt_device_screen_lock">Device screen lock only</string>
+    <string name="nt_device_lock_both">Biometrics or Device screen lock</string>
+    <string name="fragment_title">Settings</string>
+    <string name="authentication_description">Use your device credentials to access this feature</string>
+    <string name="selected_category_title">Selected</string>
+    <string name="unselected_category_title">Unselected</string>
+    <string name="no_selected_apps">No selected apps</string>
 </resources>

@@ -167,4 +167,27 @@
          <item>17</item>
      </string-array>
 
+    <string-array name="nt_app_lock_exclude_list">
+        <item>com.android.settings</item>
+    </string-array>
+
+    <string-array name="nothing_applocker_locktype_entries">
+        <item>@string/app_locker_screen_is_locked</item>
+        <item>@string/app_locker_screen_is_locked_or_app_exists</item>
+    </string-array>
+
+    <string-array name="nothing_applocker_locktype_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    
+    <string-array name="nt_lock_settings_entries">
+        <item>@string/nt_device_lock_both</item>
+        <item>@string/nt_device_screen_lock</item>
+    </string-array>
+
+    <string-array name="nt_lock_settings_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>

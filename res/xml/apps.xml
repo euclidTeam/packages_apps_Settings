@@ -75,6 +75,14 @@
             android:targetPackage="${applicationId}"/>
     </Preference>
 
+    <Preference
+        android:key="app_lock_settings"
+        android:title="@string/nt_app_lock"
+        android:summary="@string/nt_app_lock_summary"
+        android:order="-994"
+        android:fragment="com.android.settings.applock.AppLockFragment"
+        settings:controller="com.android.settings.applock.AppLockFragmentPreferenceController" />
+
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
         android:order="10"/>
