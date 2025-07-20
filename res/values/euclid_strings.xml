@@ -497,4 +497,20 @@ When the screen is off, the torch can be enabled with one of the following key c
     <string name="selected_category_title">Selected</string>
     <string name="unselected_category_title">Unselected</string>
     <string name="no_selected_apps">No selected apps</string>
+    
+    <!-- Ambient -->
+    <string name="ambient_display">Ambient display</string>
+    <string name="ambient_display_summary">Show info when screen is off</string>
+    <string name="ambient_display_when_to_show">When to show</string>
+    <string name="ambient_display_always_title">Always</string>
+    <string name="ambient_display_always_summary">Consumes more power</string>
+    <string name="ambient_display_schedule_title">Schedule</string>
+    <string name="ambient_display_schedule_summary">Turn on at custom time</string>
+    <string name="ambient_display_charging_title">Charging</string>
+    <string name="ambient_display_charging_summary">Enable Ambient display when charging</string>
+    <string name="ambient_display_start_time">Start time</string>
+    <string name="ambient_display_end_time">End time</string>
+    <string name="ambient_display_schedule_time_invalid_summary">
+        Invalid time range – start and end times are the same.
+    </string>
 </resources>

@@ -9,4 +9,41 @@
         <item name="android:textColor">@color/primary_dark_material_light</item>
         <item name="android:lineSpacingMultiplier">1.2</item>
     </style>
+    
+   <style name="Widget.App.Chip" parent="Widget.Material3.MaterialTimePicker.Display">
+    </style>
+
+    <style name="Widget.App.TimePicker.Clock" parent="">
+        <item name="clockFaceBackgroundColor">@color/settingslib_preference_bg_color</item>
+        <item name="clockHandColor">@color/theme_accent</item>
+        <item name="clockNumberTextColor">@color/op_control_text_color_primary</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/theme_accent</item>
+    </style>
+
+    <style name="Widget.App.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/theme_accent</item>
+    </style>
+
+    <style name="Material3TimePicker" parent="Theme.Material3.DynamicColors.DayNight">
+        <item name="colorPrimary">@color/card_surface_color</item>
+        <item name="colorOnPrimary">@color/theme_accent</item>
+        <item name="colorOnSurface">@color/card_surface_color</item>
+        <item name="colorOnSecondary">@color/op_control_text_color_primary_inverse</item>
+        <item name="android:windowElevation">@dimen/m3_timepicker_window_elevation</item>
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+        <item name="textInputStyle">@style/Widget.Material3.MaterialTimePicker.Display.TextInputLayout</item>
+        <item name="materialDisplayDividerStyle">@style/Widget.Material3.MaterialTimePicker.Display.Divider</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Material3.MaterialTimePicker.Button</item>
+        <item name="materialClockStyle">@style/Widget.Material3.MaterialTimePicker.Clock</item>
+        <item name="materialTimePickerStyle">@style/Widget.Material3.MaterialTimePicker</item>
+        <item name="imageButtonStyle">@style/Widget.Material3.MaterialTimePicker.ImageButton</item>
+        <item name="materialTimePickerTitleStyle">@style/TextAppearance.Material3.MaterialTimePicker.Title</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+        <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.TextButton.Dialog.Flush</item>
+    </style>
 </resources>
