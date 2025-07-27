@@ -74,7 +74,7 @@ public class AmbientDisplayNotificationsPreferenceController extends
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        Settings.Secure.putInt(mContext.getContentResolver(), DOZE_ENABLED, isChecked ? ON : OFF);
+        Settings.Secure.putInt(mContext.getContentResolver(), "doze_pulse_on_notification", isChecked ? ON : OFF);
         return true;
     }
 
