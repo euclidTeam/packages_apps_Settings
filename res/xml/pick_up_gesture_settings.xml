@@ -34,4 +34,11 @@
         app:keywords="@string/keywords_gesture"
         app:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
+    <com.euclid.support.preferences.SecureSettingSwitchPreference
+        android:key="doze_pulse_on_pickup"
+        android:defaultValue="false"
+        android:title="@string/doze_pulse_on_pickup_title"
+        android:summary="@string/doze_pulse_on_pickup_summary"
+        android:dependency="gesture_pick_up" />
+
 </PreferenceScreen>

@@ -31,4 +31,11 @@
         app:keywords="@string/keywords_gesture"
         app:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
+    <com.euclid.support.preferences.SecureSettingSwitchPreference
+        android:key="doze_pulse_on_double_tap"
+        android:defaultValue="false"
+        android:title="@string/doze_pulse_on_double_tap_title"
+        android:summary="@string/doze_pulse_on_double_tap_summary"
+        android:dependency="gesture_double_tap_screen" />
+
 </PreferenceScreen>
