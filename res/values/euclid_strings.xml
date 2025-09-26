@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2024 MistOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, Euclid version -->
+    <string name="euclid_version">Euclid version</string>
+    <string name="euclid_version_default">Unknown</string>
+    <string name="keywords_euclid_version">Euclid version, euclid version</string>
+
+</resources>
