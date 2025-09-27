@@ -5666,6 +5666,30 @@
                 android:value="@string/menu_key_system"/>
         </activity>
 
+
+        <!-- Prism Settings -->
+        <activity android:name="Settings$PrismSettingsActivity"
+                  android:label="@string/prism_dashboard_title"
+                  android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.prism.settings.PrismSettings" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.order" android:value="-1"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/prism_dashboard_summary"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.prism.settings.PrismSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_prism"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>

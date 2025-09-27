@@ -55,15 +55,22 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "Prism/src/**/*.java",
+        "Prism/src/**/*.kt",
     ],
+
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
     use_resource_processor: true,
+
+    aaptflags: ["--extra-packages com.prism.settings"],
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "Prism/res",
     ],
     static_libs: [
         // External dependencies

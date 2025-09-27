@@ -21,10 +21,27 @@
     android:key="top_level_settings">
 
     <PreferenceCategory
-        android:order="-140"
+        android:order="-150"
         android:key="top_level_account_category"
         android:layout="@layout/settingslib_preference_category_no_title">
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:order="-140"
+        android:key="top_level_prism_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.prism.settings.PrismSettings"
+            android:icon="@drawable/ic_homepage_prism"
+            android:key="top_level_prism"
+            android:order="-160"
+            android:title="@string/prism_dashboard_title"
+            android:summary="@string/prism_dashboard_summary"
+            settings:highlightableMenuKey="@string/menu_key_prism"
+            settings:controller="com.prism.settings.TopLevelPrismSettingsPreferenceController"/>
+    </PreferenceCategory>
+
 
     <PreferenceCategory
         android:order="-130"
