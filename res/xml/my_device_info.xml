@@ -21,6 +21,13 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- Mist logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/euclid_logo"
+        android:key="euclid_logo"
+        android:order="-1"
+        android:selectable="false" />
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"

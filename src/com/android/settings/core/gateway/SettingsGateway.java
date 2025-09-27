@@ -218,6 +218,12 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.prism.settings.PrismSettings;
+import com.prism.settings.fragments.*;
+import com.prism.settings.fragments.statusbar.*;
+import com.prism.settings.fragments.quicksettings.*;
+import com.prism.settings.fragments.themes.*;
+import com.prism.settings.fragments.lockscreen.*;
+
 
 public class SettingsGateway {
 
@@ -364,6 +370,10 @@ public class SettingsGateway {
             StorageDashboardFragment.class.getName(),
             SystemDashboardFragment.class.getName(),
             PrismSettings.class.getName(),
+            Lockscreen.class.getName(),
+            Themes.class.getName(),
+            QuickSettings.class.getName(),
+            StatusBar.class.getName(),
             NetworkDashboardFragment.class.getName(),
             ConnectedDeviceDashboardFragment.class.getName(),
             UsbDetailsFragment.class.getName(),
@@ -430,6 +440,10 @@ public class SettingsGateway {
     public static final String[] SETTINGS_FOR_RESTRICTED = {
             // Home page
             Settings.PrismSettingsActivity.class.getName(),
+            Settings.PrismLockscreenActivity.class.getName(),
+            Settings.PrismQuickSettingsActivity.class.getName(),
+            Settings.PrismThemesActivity.class.getName(),
+            Settings.PrismStatusBarActivity.class.getName(),
             Settings.NetworkDashboardActivity.class.getName(),
             Settings.ConnectedDeviceDashboardActivity.class.getName(),
             Settings.AppDashboardActivity.class.getName(),

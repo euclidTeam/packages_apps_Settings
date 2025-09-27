@@ -5690,6 +5690,42 @@
                        android:value="true" />
         </activity>
 
+        <!-- Themes Settings -->
+        <activity android:name="Settings$PrismThemesActivity"
+                  android:label="@string/themes_title"
+                  android:icon="@drawable/ic_themes"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.prism.settings.fragments.themes.Themes" />
+        </activity>
+
+        <!-- Lockscreen Settings -->
+        <activity android:name="Settings$PrismLockscreenActivity"
+                  android:label="@string/lockscreen_title"
+                  android:icon="@drawable/ic_lockscreen"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.prism.settings.fragments.lockscreen.Lockscreen" />
+        </activity>
+
+        <!-- Controll Settings -->
+        <activity android:name="Settings$PrismQuickSettingsActivity"
+                  android:label="@string/quick_settings_title"
+                  android:icon="@drawable/ic_controll"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.prism.settings.fragments.quicksettings.QuickSettings" />
+        </activity>
+
+        <!-- Status Settings -->
+        <activity android:name="Settings$PrismStatusBarActivity"
+                  android:label="@string/status_title"
+                  android:icon="@drawable/ic_status"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.prism.settings.fragments.statusbar.StatusBar" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>

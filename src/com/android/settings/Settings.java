@@ -539,4 +539,10 @@ public class Settings extends SettingsActivity {
     public static class ContentProtectionSettingsActivity extends SettingsActivity { /* empty */ }
     public static class MagnificationActivity extends SettingsActivity { /* empty */ }
     public static class FlashNotificationsActivity extends SettingsActivity { /* empty */ }
+    /** Prism Activities **/
+    public static class PrismActivity extends SettingsActivity {}
+    public static class PrismThemesActivity extends SettingsActivity {}
+    public static class PrismLockscreenActivity extends SettingsActivity {}
+    public static class PrismQuickSettingsActivity extends SettingsActivity {}
+    public static class PrismStatusBarActivity extends SettingsActivity {}
 }
