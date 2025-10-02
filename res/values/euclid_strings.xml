@@ -22,4 +22,8 @@
      <!-- euclidOS device -->
     <string name="about_device_name">Device</string>
 
+    <!-- Maintainer Info -->
+    <string name="maintainer_title">Maintainer</string>
+    <string name="maintainer_unknown">Unknown Maintainer</string>
+
 </resources>
