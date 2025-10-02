@@ -38,6 +38,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidVersionPreferenceController"/>
 
+    <!-- Maintainer Info -->
+    <Preference
+        android:key="maintainer_info"
+        android:title="@string/maintainer_title"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MaintainerPreferenceController" />
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"

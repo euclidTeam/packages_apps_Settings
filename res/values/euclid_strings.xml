@@ -11,4 +11,8 @@
     <string name="euclid_version_default">Unknown</string>
     <string name="keywords_euclid_version">Euclid version, euclid version</string>
 
+    <!-- Maintainer Info -->
+    <string name="maintainer_title">Maintainer</string>
+    <string name="maintainer_unknown">Unknown Maintainer</string>
+
 </resources>
