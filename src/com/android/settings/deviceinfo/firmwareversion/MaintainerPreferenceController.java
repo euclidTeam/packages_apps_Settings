@@ -17,30 +17,38 @@ public class MaintainerPreferenceController extends BasePreferenceController {
         super(context, preferenceKey);
     }
 
+    // Always available, preference is never hidden
     @Override
     public int getAvailabilityStatus() {
-        String maintainer = SystemProperties.get("ro.maintainer.name", "").trim();
-        if (maintainer.isEmpty()) return UNSUPPORTED_ON_DEVICE;
-
-        Resources res = mContext.getResources();
-        String[] officialMaintainers = res.getStringArray(R.array.official_maintainers);
-
-        for (String m : officialMaintainers) {
-            if (m.equalsIgnoreCase(maintainer)) {
-                return AVAILABLE; // Show preference if in whitelist
-            }
-        }
-        return UNSUPPORTED_ON_DEVICE; // Hide if not in whitelist
+        return AVAILABLE;
     }
 
     @Override
     public void updateState(Preference preference) {
         super.updateState(preference);
+
+        Resources res = mContext.getResources();
         String maintainer = SystemProperties.get("ro.maintainer.name", "").trim();
-        if (!maintainer.isEmpty()) {
-            preference.setSummary(maintainer + " (Official)");
+        String[] officialMaintainers = res.getStringArray(R.array.official_maintainers);
+
+        if (maintainer.isEmpty()) {
+            // Property not set at all
+            preference.setSummary(res.getString(R.string.maintainer_unknown));
+            return;
+        }
+
+        boolean isOfficial = false;
+        for (String m : officialMaintainers) {
+            if (m.equalsIgnoreCase(maintainer)) {
+                isOfficial = true;
+                break;
+            }
+        }
+
+        if (isOfficial) {
+            preference.setSummary(maintainer + " (" + res.getString(R.string.maintainer_official) + ")");
         } else {
-            preference.setSummary(mContext.getString(R.string.maintainer_unknown));
+            preference.setSummary(res.getString(R.string.maintainer_unofficial));
         }
     }
 }
