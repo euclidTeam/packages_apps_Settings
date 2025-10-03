@@ -23,6 +23,8 @@
 
     <!-- Maintainer Info -->
     <string name="maintainer_title">Maintainer</string>
-    <string name="maintainer_unknown">Unknown Maintainer</string>
+    <string name="maintainer_unknown">UNKNOWN MAINTAINER</string>
+    <string name="maintainer_official">OFFICIAL</string>
+    <string name="maintainer_unofficial">UNOFFICIAL BUILD</string>
 
 </resources>
