@@ -52,7 +52,7 @@ public class MaintainerPreferenceController extends BasePreferenceController {
         }
 
         // Choose icon based on official/unofficial
-        int iconRes = isOfficial ? R.drawable.ic_check : R.drawable.ic_cross;
+        int iconRes = isOfficial ? R.drawable.ic_verified : R.drawable.ic_unverified;
         Drawable icon = mContext.getDrawable(iconRes);
 
         if (icon != null) {
